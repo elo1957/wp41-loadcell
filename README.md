@@ -1,6 +1,9 @@
-# ESP-MQTT sample application
-(See the README.md file in the upper level 'examples' directory for more information about examples.)
+# Firmware for esp32 interfacing a loadcell for 1 m and 1.5 m Rockflow initial using ESP-MQTT sample application
+
+datasheet for loadcell and interfcae board is in this directory 
+
 The interfaceboard hx711 for the load cell is from https://components.espressif.com/components/esp-idf-lib/hx711/versions/1.0.1/examples/default?language=en
+The data is sampled and via tcp Mqtt ransmitted up into thingspeak.com 
 
 This example connects to the broker URI selected using `idf.py menuconfig` (using mqtt tcp transport) and as a demonstration subscribes/unsubscribes and send a message on certain topic.
 (Please note that the public broker is maintained by the community so may not be always available, for details please see this [disclaimer](https://iot.eclipse.org/getting-started/#sandboxes))
